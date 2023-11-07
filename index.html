@@ -544,10 +544,10 @@
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item bg-light rounded p-4">
                     <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/MSU.jpg" alt="">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="Products/Declatter1.jpg" alt="">
                         <div class="ms-4">
-                            <h5 class="mb-1">MSU</h5>
-                            <span>University</span>
+                            <h5 class="mb-1">DeCletter</h5>
+                            <span>Organisation</span>
                         </div>
                     </div>
                     <p class="mb-0">Excellent keep it up guys.You did well,  we trust you and we'd definitely recommend.</p>
@@ -586,7 +586,103 @@
         </div>
     </div>
     <!-- Testimonial End -->
+   
 
+    <div class="container register">
+        <div class="row">
+          <div class="col-md-12">
+            <div
+              class="tab-pane fade show active text-align form-new"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <h3 class="register-heading text-nowrap">Admission Form</h3>
+              <div class="row register-form">
+                <div class="col-md-12">
+                  <form autocomplete="off">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="Name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Your Name *"
+                        value=""
+                        required=""
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="Email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Your Email *"
+                        value=""
+                        required=""
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="number"
+                        name="Phone"
+                        id="phone"
+                        class="form-control"
+                        placeholder="Your Contact Number *"
+                        value=""
+                        required=""
+                      />
+                    </div>
+                    <div class="form-group">
+                      <textarea placeholder="product details(name,picture code & colour)" id="details" class="box" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="submit"
+                        name="submit"
+                        onclick="gotowhatsapp()"
+                        class="btnSubmit btn-block"
+                        value="Submit to whatsapp"
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+  
+  
+      <span
+      class="float"
+      onclick="gotowhatsapp()"
+      style="
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 120px;
+        right: 10px;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 111;
+      "
+      >
+      <img
+        src="https://trickuweb.com/whatsapp.png"
+        alt=""
+        height="60px"
+        width="60px"
+      />
+      </a>
+      
+      </span>
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -597,7 +693,8 @@
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>34 Hillside Rd Ext, Transtobacco, Msasa, Harare, Zimbabwe</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+263 772 255 765</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+263 717 907 426</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>kingdommsolutions@gmail.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>infor@kingdommsolutions.co.zw</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>baloyibj@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href="#"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href="https://www.facebook.com/kingdommarkertingsolutions/"><i class="fab fa-facebook-f"></i></a>
@@ -679,6 +776,24 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        function gotowhatsapp() {
+            
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+            var details = document.getElementById("details").value;
+        
+            var url = "https://wa.me/263772255765?text=" 
+            + "Name: " + name + "%0a"
+            + "Phone: " + phone + "%0a"
+            + "Email: " + email  + "%0a"
+            + "Details: " + details; 
+        
+            window.open(url, '_blank').focus();
+        }
+        </script>
+   
 </body>
 
 </html>
