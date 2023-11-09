@@ -500,11 +500,11 @@
 .speciality .box-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .speciality .box-container .box{
@@ -530,8 +530,8 @@
     align-items: center;
     text-align: center;
     justify-content: center;
- 
-    padding: 2rem;
+    
+    padding: .7rem;
 }
 .speciality .box-container .box .content{
     text-align: center;
@@ -764,3 +764,4 @@ font-weight: bolder;
 color:plum ;
 margin-right:1rem ;
 }
+
