@@ -11974,3 +11974,7 @@ textarea.form-control-lg {
         display: none !important
     }
 }
+.px-55{
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
